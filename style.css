@@ -2,21 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #303033; /* Dark background */
+    color: #e1dfdb; /* Light text color */
 }
 
 .header {
-    background-color: #444;
+    background-color: #444; /* You can keep this or change it to match your theme */
     padding: 10px 20px;
-    color: white;
+    color: #e1dfdb; /* Light text color */
     text-align: center;
 }
 
 .navbar .title {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: #e1dfdb; /* Light text for title */
     text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar__sections .section {
-    color: white;
+    color: #e1dfdb; /* Light text for navbar links */
     text-decoration: none;
     margin-left: 20px;
 }
@@ -34,8 +34,9 @@ body {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    background: white;
+    background: #444; /* A slightly lighter background for content */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #e1dfdb; /* Light text color */
 }
 
 .timeline-container {
@@ -48,7 +49,7 @@ body {
 }
 
 .timeline h2 {
-    color: #444;
+    color: #e1dfdb; /* Light text color for headings */
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -64,8 +65,8 @@ body {
 }
 
 .timeline li span {
-    background-color: #888;
-    color: white;
+    background-color: #888; /* Background color for date labels */
+    color: #e1dfdb; /* Light text color for date labels */
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 5px;
@@ -78,18 +79,18 @@ body {
     display: block;
     margin-left: 80px;
     font-size: 18px;
-    color: #333;
+    color: #e1dfdb; /* Light text color for strong elements */
 }
 
 .timeline li p {
     margin-left: 80px;
-    color: #555;
+    color: #e1dfdb; /* Light text color for paragraph text */
 }
 
 footer {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
-    background-color: #444;
-    color: white;
+    background-color: #444; /* Slightly lighter background for footer */
+    color: #e1dfdb; /* Light text color for footer */
 }
