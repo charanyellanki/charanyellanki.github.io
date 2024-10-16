@@ -3,79 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="img/preview.png" />
-    <title>Charan Yellanki | Data Science Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Portfolio with Chatbot</title>
+    <!-- BotUI CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css">
 </head>
 <body>
-
-<header class="header">
-    <nav class="navbar">
-        <a class="title" href="https://charanyellanki.github.io/">Charan Yellanki</a>
-        <div class="navbar__sections">
-            <a class="section" href="index.html"><u>Home</u></a>
-            <a class="section" href="about.html">About</a>
-            <a class="section" href="projects.html">Projects</a>
-            <a class="section" href="contact.html">Contact</a>
-        </div>
-    </nav>
-</header>
-
-<main class="page-content">
-    <div class="timeline-container">
-        <div class="timeline">
-            <h2>Professional</h2>
-            <ul>
-                <li>
-                    <span>2024 - Present</span>
-                    <strong>Current Role</strong>
-                    <p>Seeking a full-time opportunity in Data Science.</p>
-                </li>
-                <li>
-                    <span>2023</span>
-                    <strong>Project</strong>
-                    <p>Worked on synthetic customer reviews project for an elevator service business.</p>
-                </li>
-                <li>
-                    <span>2022</span>
-                    <strong>Contract Cancellation ML</strong>
-                    <p>Developed a machine learning model to predict contract cancellations.</p>
-                </li>
-                <li>
-                    <span>2021</span>
-                    <strong>Data Scientist</strong>
-                    <p>Worked at Armorblox and TK Elevator, specializing in NLP and predictive modeling.</p>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="timeline">
-            <h2>Personal</h2>
-            <ul>
-                <li>
-                    <span>2024</span>
-                    <strong>CharBot</strong>
-                    <p>Created a personal chatbot trained with personal information using Dialogflow.</p>
-                </li>
-                <li>
-                    <span>2023</span>
-                    <strong>DSC Collide Conference</strong>
-                    <p>Attended DSC Collide 2024 and connected with data and AI leaders.</p>
-                </li>
-                <li>
-                    <span>2022</span>
-                    <strong>Taj's Growth</strong>
-                    <p>Celebrated the success of a GSU alumni, Taj.</p>
-                </li>
-            </ul>
-        </div>
+    <!-- Main content of your portfolio -->
+    <div class="content">
+        <!-- Your portfolio content goes here -->
     </div>
-</main>
 
-<footer>
-    <p>© 2024 Charan Yellanki | <a href="mailto:charan.yellanki@gmail.com">Email</a></p>
-</footer>
+    <!-- Chatbot Container -->
+    <div id="chat-icon" onclick="openChat()">
+        <img src="path-to-your-chat-icon.png" alt="Chat Icon">
+    </div>
 
+    <div id="chatbot-container" style="display: none;">
+        <div id="chatbot-app"></div>
+        <bot-ui></bot-ui>
+    </div>
+
+    <!-- BotUI JS -->
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
+    <script>
+        var botui = new BotUI('chatbot-app');
+        function openChat() {
+            document.getElementById('chatbot-container').style.display = 'block';
+            botui.message.add({ content: 'Hello! How can I assist you today?' });
+        }
+    </script>
 </body>
 </html>
-
