@@ -1,10 +1,61 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #303033; /* Dark background */
     color: #e1dfdb; /* Light text color */
 }
+ */
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Chatbot icon in the bottom-right corner */
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chat-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Chatbot container styling */
+#chatbot-container {
+    position: fixed;
+    bottom: 80px; /* Above the chat icon */
+    right: 20px;
+    width: 300px;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* BotUI-specific styling (already provided by the CDN) */
+/* You can add additional styles if needed */
+
 
 .header {
     background-color: #444; /* You can keep this or change it to match your theme */
